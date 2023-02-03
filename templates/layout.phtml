@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>RES03 Intégration J11 Exercices Animation</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <?php require './_header.phtml' ?>
+        <?php require './_footer.phtml' ?>
+        
+        <?php if($template === "homepage") {
+                require '../pages/homepage.php';
+            }
+            else if($template === "login") {
+                require '../pages/login.php';
+            }
+            else if($require === "register") {
+                require '../pages/register.php';
+            }
+            else if($require === "account") {
+                require '../pages/account.php';
+            }
+            ?>
+    </body>
+</html>
