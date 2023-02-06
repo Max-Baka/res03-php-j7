@@ -6,21 +6,21 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <?php require './_header.phtml' ?>
-        <?php require './_footer.phtml' ?>
+        <?php require './partials/_header.phtml' ?>
         
         <?php if($template === "homepage") {
-                require '../pages/homepage.php';
+                require './homepage/homepage.phtml';
             }
             else if($template === "login") {
-                require '../pages/login.php';
+                require './login/login.phtml';
             }
             else if($require === "register") {
-                require '../pages/register.php';
+                require './register/register.phtml';
             }
             else if($require === "account") {
-                require '../pages/account.php';
+                require './account/account.phtml';
             }
             ?>
+            <?php require './partials/_footer.phtml' ?>
     </body>
 </html>

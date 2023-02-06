@@ -1,15 +1,15 @@
 <?php
 function checkRoute(string $route) : void 
 {
-    if ($_GET["route"]==="connexion")
+    if ($route ==="connexion")
     {
         require 'pages/login.php';
     }
-    else if ($_GET["route"]==="creer-un-compte")
+    else if ($route ==="creer-un-compte")
     {
         require 'pages/register.php';
     }
-    else if ($_GET["route"]==="mon-compte")
+    else if ($route ==="mon-compte")
     {
         require 'pages/account.php';
     }
